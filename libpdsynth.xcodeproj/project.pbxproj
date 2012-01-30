@@ -1,0 +1,266 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		741B3E4014D748E4008F13FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741B3E3F14D748E4008F13FE /* UIKit.framework */; };
+		741B3E4214D748E4008F13FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741B3E4114D748E4008F13FE /* Foundation.framework */; };
+		741B3E4414D748E4008F13FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741B3E4314D748E4008F13FE /* CoreGraphics.framework */; };
+		741B3E4A14D748E5008F13FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 741B3E4814D748E5008F13FE /* InfoPlist.strings */; };
+		741B3E4C14D748E5008F13FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B3E4B14D748E5008F13FE /* main.m */; };
+		741B3E5014D748E5008F13FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B3E4F14D748E5008F13FE /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		741B3E3B14D748E4008F13FE /* libpdsynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libpdsynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		741B3E3F14D748E4008F13FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		741B3E4114D748E4008F13FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		741B3E4314D748E4008F13FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		741B3E4714D748E5008F13FE /* libpdsynth-Info.plist */ = {isa = PBXFileReference; path = "libpdsynth-Info.plist"; sourceTree = "<group>"; };
+		741B3E4914D748E5008F13FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		741B3E4B14D748E5008F13FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		741B3E4D14D748E5008F13FE /* libpdsynth-Prefix.pch */ = {isa = PBXFileReference; path = "libpdsynth-Prefix.pch"; sourceTree = "<group>"; };
+		741B3E4E14D748E5008F13FE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		741B3E4F14D748E5008F13FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		741B3E3814D748E4008F13FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741B3E4014D748E4008F13FE /* UIKit.framework in Frameworks */,
+				741B3E4214D748E4008F13FE /* Foundation.framework in Frameworks */,
+				741B3E4414D748E4008F13FE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		741B3E3014D748E4008F13FE = {
+			isa = PBXGroup;
+			children = (
+				741B3E4514D748E4008F13FE /* libpdsynth */,
+				741B3E3E14D748E4008F13FE /* Frameworks */,
+				741B3E3C14D748E4008F13FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		741B3E3C14D748E4008F13FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				741B3E3B14D748E4008F13FE /* libpdsynth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		741B3E3E14D748E4008F13FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				741B3E3F14D748E4008F13FE /* UIKit.framework */,
+				741B3E4114D748E4008F13FE /* Foundation.framework */,
+				741B3E4314D748E4008F13FE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		741B3E4514D748E4008F13FE /* libpdsynth */ = {
+			isa = PBXGroup;
+			children = (
+				741B3E4E14D748E5008F13FE /* AppDelegate.h */,
+				741B3E4F14D748E5008F13FE /* AppDelegate.m */,
+				741B3E4614D748E5008F13FE /* Supporting Files */,
+			);
+			path = libpdsynth;
+			sourceTree = "<group>";
+		};
+		741B3E4614D748E5008F13FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				741B3E4714D748E5008F13FE /* libpdsynth-Info.plist */,
+				741B3E4814D748E5008F13FE /* InfoPlist.strings */,
+				741B3E4B14D748E5008F13FE /* main.m */,
+				741B3E4D14D748E5008F13FE /* libpdsynth-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		741B3E3A14D748E4008F13FE /* libpdsynth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 741B3E5314D748E5008F13FE /* Build configuration list for PBXNativeTarget "libpdsynth" */;
+			buildPhases = (
+				741B3E3714D748E4008F13FE /* Sources */,
+				741B3E3814D748E4008F13FE /* Frameworks */,
+				741B3E3914D748E4008F13FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libpdsynth;
+			productName = libpdsynth;
+			productReference = 741B3E3B14D748E4008F13FE /* libpdsynth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		741B3E3214D748E4008F13FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "MAYA Design, Inc";
+			};
+			buildConfigurationList = 741B3E3514D748E4008F13FE /* Build configuration list for PBXProject "libpdsynth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 741B3E3014D748E4008F13FE;
+			productRefGroup = 741B3E3C14D748E4008F13FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				741B3E3A14D748E4008F13FE /* libpdsynth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		741B3E3914D748E4008F13FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741B3E4A14D748E5008F13FE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		741B3E3714D748E4008F13FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741B3E4C14D748E5008F13FE /* main.m in Sources */,
+				741B3E5014D748E5008F13FE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		741B3E4814D748E5008F13FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				741B3E4914D748E5008F13FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		741B3E5114D748E5008F13FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		741B3E5214D748E5008F13FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		741B3E5414D748E5008F13FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libpdsynth/libpdsynth-Prefix.pch";
+				INFOPLIST_FILE = "libpdsynth/libpdsynth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		741B3E5514D748E5008F13FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libpdsynth/libpdsynth-Prefix.pch";
+				INFOPLIST_FILE = "libpdsynth/libpdsynth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		741B3E3514D748E4008F13FE /* Build configuration list for PBXProject "libpdsynth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741B3E5114D748E5008F13FE /* Debug */,
+				741B3E5214D748E5008F13FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		741B3E5314D748E5008F13FE /* Build configuration list for PBXNativeTarget "libpdsynth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741B3E5414D748E5008F13FE /* Debug */,
+				741B3E5514D748E5008F13FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 741B3E3214D748E4008F13FE /* Project object */;
+}
