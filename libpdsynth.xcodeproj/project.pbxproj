@@ -13,19 +13,37 @@
 		741B3E4A14D748E5008F13FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 741B3E4814D748E5008F13FE /* InfoPlist.strings */; };
 		741B3E4C14D748E5008F13FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B3E4B14D748E5008F13FE /* main.m */; };
 		741B3E5014D748E5008F13FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 741B3E4F14D748E5008F13FE /* AppDelegate.m */; };
+		741B3E5714D7490A008F13FE /* pd in Resources */ = {isa = PBXBuildFile; fileRef = 741B3E5614D7490A008F13FE /* pd */; };
+		741B3E7414D77063008F13FE /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 741B3E6914D76FAC008F13FE /* libpd-ios.a */; };
+		741B3E7614D770A3008F13FE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741B3E7514D770A3008F13FE /* AudioToolbox.framework */; };
+		741B3E7E14D77C2B008F13FE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 741B3E7D14D77C2B008F13FE /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		741B3E6814D76FAC008F13FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 741B3E5814D74932008F13FE /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		741B3E3B14D748E4008F13FE /* libpdsynth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = libpdsynth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		741B3E3F14D748E4008F13FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		741B3E4114D748E4008F13FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		741B3E4314D748E4008F13FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		741B3E4714D748E5008F13FE /* libpdsynth-Info.plist */ = {isa = PBXFileReference; path = "libpdsynth-Info.plist"; sourceTree = "<group>"; };
+		741B3E4714D748E5008F13FE /* libpdsynth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libpdsynth-Info.plist"; sourceTree = "<group>"; };
 		741B3E4914D748E5008F13FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		741B3E4B14D748E5008F13FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		741B3E4D14D748E5008F13FE /* libpdsynth-Prefix.pch */ = {isa = PBXFileReference; path = "libpdsynth-Prefix.pch"; sourceTree = "<group>"; };
-		741B3E4E14D748E5008F13FE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		741B3E4D14D748E5008F13FE /* libpdsynth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libpdsynth-Prefix.pch"; sourceTree = "<group>"; };
+		741B3E4E14D748E5008F13FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		741B3E4F14D748E5008F13FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		741B3E5614D7490A008F13FE /* pd */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pd; path = ../pd; sourceTree = "<group>"; };
+		741B3E5814D74932008F13FE /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = libpd_all/libpd.xcodeproj; sourceTree = "<group>"; };
+		741B3E7514D770A3008F13FE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		741B3E7D14D77C2B008F13FE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				741B3E7E14D77C2B008F13FE /* AVFoundation.framework in Frameworks */,
+				741B3E7614D770A3008F13FE /* AudioToolbox.framework in Frameworks */,
+				741B3E7414D77063008F13FE /* libpd-ios.a in Frameworks */,
 				741B3E4014D748E4008F13FE /* UIKit.framework in Frameworks */,
 				741B3E4214D748E4008F13FE /* Foundation.framework in Frameworks */,
 				741B3E4414D748E4008F13FE /* CoreGraphics.framework in Frameworks */,
@@ -45,6 +66,7 @@
 		741B3E3014D748E4008F13FE = {
 			isa = PBXGroup;
 			children = (
+				741B3E5814D74932008F13FE /* libpd.xcodeproj */,
 				741B3E4514D748E4008F13FE /* libpdsynth */,
 				741B3E3E14D748E4008F13FE /* Frameworks */,
 				741B3E3C14D748E4008F13FE /* Products */,
@@ -62,6 +84,8 @@
 		741B3E3E14D748E4008F13FE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				741B3E7D14D77C2B008F13FE /* AVFoundation.framework */,
+				741B3E7514D770A3008F13FE /* AudioToolbox.framework */,
 				741B3E3F14D748E4008F13FE /* UIKit.framework */,
 				741B3E4114D748E4008F13FE /* Foundation.framework */,
 				741B3E4314D748E4008F13FE /* CoreGraphics.framework */,
@@ -72,6 +96,7 @@
 		741B3E4514D748E4008F13FE /* libpdsynth */ = {
 			isa = PBXGroup;
 			children = (
+				741B3E5614D7490A008F13FE /* pd */,
 				741B3E4E14D748E5008F13FE /* AppDelegate.h */,
 				741B3E4F14D748E5008F13FE /* AppDelegate.m */,
 				741B3E4614D748E5008F13FE /* Supporting Files */,
@@ -88,6 +113,14 @@
 				741B3E4D14D748E5008F13FE /* libpdsynth-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		741B3E6514D76FAC008F13FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				741B3E6914D76FAC008F13FE /* libpd-ios.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +162,12 @@
 			mainGroup = 741B3E3014D748E4008F13FE;
 			productRefGroup = 741B3E3C14D748E4008F13FE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 741B3E6514D76FAC008F13FE /* Products */;
+					ProjectRef = 741B3E5814D74932008F13FE /* libpd.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				741B3E3A14D748E4008F13FE /* libpdsynth */,
@@ -136,12 +175,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		741B3E6914D76FAC008F13FE /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = 741B3E6814D76FAC008F13FE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		741B3E3914D748E4008F13FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				741B3E4A14D748E5008F13FE /* InfoPlist.strings in Resources */,
+				741B3E5714D7490A008F13FE /* pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +229,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -191,6 +243,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/libpd_all\"/**",
+					"\"$(SRCROOT)/TPAudioController_all\"/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -205,11 +261,17 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)\"";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/libpd_all\"/**",
+					"\"$(SRCROOT)/TPAudioController_all\"/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;

@@ -1,0 +1,38 @@
+#N canvas 538 146 592 430 12;
+#X text 26 18 THE CLASSIC SUBTRACTIVE SYNTH SOUND;
+#X obj 307 22 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 214 223 hsl 200 20 20 20000 1 0 empty empty pitch -2 -8 0 10
+-262144 -1 -1 0 0;
+#X msg 141 135 1;
+#X msg 154 194 0;
+#X msg 152 164 0.5;
+#X obj 307 43 metro 500;
+#X obj 307 70 trigger bang bang;
+#X obj 307 94 random 10;
+#X floatatom 435 147 5 0 0 0 - - -;
+#X floatatom 316 145 5 0 0 0 - - -;
+#X obj 307 118 / 10;
+#X obj 423 94 random 30;
+#X obj 397 177 mtof;
+#X obj 423 118 + 50;
+#X text 327 19 <-- generate random notes;
+#X obj 139 255 pafcontrol~;
+#X obj 139 315 dac~;
+#X connect 1 0 6 0;
+#X connect 2 0 16 1;
+#X connect 3 0 16 0;
+#X connect 4 0 16 0;
+#X connect 5 0 16 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 1 12 0;
+#X connect 8 0 11 0;
+#X connect 11 0 10 0;
+#X connect 11 0 16 0;
+#X connect 12 0 14 0;
+#X connect 13 0 2 0;
+#X connect 14 0 9 0;
+#X connect 14 0 13 0;
+#X connect 16 0 17 0;
+#X connect 16 0 17 1;

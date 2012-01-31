@@ -11,6 +11,7 @@
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize audioController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -18,7 +19,48 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+    self.audioController = [[PdAudioController alloc] init];
+	[self.audioController configurePlaybackWithSampleRate:44100 numberChannels:2 inputEnabled:NO mixingEnabled:NO];
+    [PdBase openFile:@"play-midi.pd" path:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"pd"]];
+	[self.audioController setActive:YES];
+	[self.audioController print];
+
+    NSTimer *timer = [NSTimer timerWithTimeInterval:0.5 target:self selector:@selector(tick) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    
     return YES;
+}
+
+- (void) tick
+{
+    static int beat = 0;
+    if (beat % 4 == 0 || beat % 4 == 2) {
+        NSLog(@"0");
+//        [PdBase sendFloat:60.0 toReceiver:@"tone"];
+        [PdBase sendFloat:1.0 toReceiver:@"kickdrum"];
+    }
+    else if (beat % 4 == 1 || beat % 4 == 3) {
+        NSLog(@"1");
+//        [PdBase sendFloat:67.0 toReceiver:@"tone"];
+        [PdBase sendFloat:1.0 toReceiver:@"snaredrum"];
+    }
+    beat++;
+}
+
++ (AudioStreamBasicDescription)audioDescription {
+    // Linear PCM, stereo, noninterleaved stream at the hardware sample rate.
+    AudioStreamBasicDescription audioDescription;
+    memset(&audioDescription, 0, sizeof(audioDescription));
+    audioDescription.mFormatID          = kAudioFormatLinearPCM;
+    audioDescription.mFormatFlags       = kAudioFormatFlagIsSignedInteger | kAudioFormatFlagIsPacked | kAudioFormatFlagsNativeEndian;
+    audioDescription.mChannelsPerFrame  = 2;
+    audioDescription.mBytesPerPacket    = sizeof(SInt16)*audioDescription.mChannelsPerFrame;
+    audioDescription.mFramesPerPacket   = 1;
+    audioDescription.mBytesPerFrame     = sizeof(SInt16)*audioDescription.mChannelsPerFrame;
+    audioDescription.mBitsPerChannel    = 8 * sizeof(SInt16);
+    audioDescription.mSampleRate        = 44100.0;
+    return audioDescription;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
